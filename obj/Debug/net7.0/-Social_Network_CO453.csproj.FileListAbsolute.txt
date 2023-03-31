@@ -1,0 +1,15 @@
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\bin\Debug\net7.0\-Social_Network_CO453.exe
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\bin\Debug\net7.0\-Social_Network_CO453.deps.json
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\bin\Debug\net7.0\-Social_Network_CO453.runtimeconfig.json
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\bin\Debug\net7.0\-Social_Network_CO453.dll
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\bin\Debug\net7.0\-Social_Network_CO453.pdb
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.csproj.AssemblyReference.cache
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.AssemblyInfoInputs.cache
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.AssemblyInfo.cs
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.csproj.CoreCompileInputs.cache
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.dll
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\refint\-Social_Network_CO453.dll
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.pdb
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\-Social_Network_CO453.genruntimeconfig.cache
+C:\Users\Laila\Documents\GitHub\-Social_Network_CO453\obj\Debug\net7.0\ref\-Social_Network_CO453.dll
