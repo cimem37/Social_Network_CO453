@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 
 class SocialContent {
-    public string Author { get; set; }
+    public string User { get; set; }
     public DateTime PostedOn { get; set; }
 
     public virtual void DisplayContent() {
-        Console.WriteLine($"Author: {Author}\nPosted On: {PostedOn}");
+        Console.WriteLine($"User: {User}\nPosted On: {PostedOn}");
     }
 }
 
@@ -42,7 +42,8 @@ class Program {
             Console.WriteLine("1. Add a message");
             Console.WriteLine("2. Add a photo");
             Console.WriteLine("3. Display all");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Display posts by user");
+            Console.WriteLine("5. Exit");
             Console.Write("Choice: ");
             int choice;
             if (!int.TryParse(Console.ReadLine(), out choice)) {
@@ -63,23 +64,27 @@ class Program {
                     DisplayAllContent();
                     break;
                 case 4:
+                    Console.WriteLine("Displaying posts by user");
+                    DisplayPostsByUser();
+                    break;
+                case 5:
                     Console.WriteLine("Exiting");
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("[ERROR] Please enter a valid input from the display");
+                    Console.WriteLine("[ERROR] Please enter a valid choice");
                     break;
             }
         }
     }
 
     static void AddMessage() {
-        Console.Write("Author: ");
-        string author = Console.ReadLine();
+        Console.Write("User: ");
+        string user = Console.ReadLine();
         Console.Write("Text: ");
         string text = Console.ReadLine();
         Message message = new Message {
-            Author = author,
+            User = user,
             Text = text,
             PostedOn = DateTime.Now
         };
@@ -87,14 +92,14 @@ class Program {
     }
 
     static void AddPhoto() {
-        Console.Write("Author: ");
-        string author = Console.ReadLine();
+        Console.Write("User: ");
+        string user = Console.ReadLine();
         Console.Write("Caption: ");
         string caption = Console.ReadLine();
         Console.Write("Image URL: ");
         string imageUrl = Console.ReadLine();
         Photo photo = new Photo {
-            Author = author,
+            User = user,
             Caption = caption,
             ImageUrl = imageUrl,
             PostedOn = DateTime.Now
@@ -108,4 +113,19 @@ class Program {
             content.DisplayContent();
         }
     }
-}
+
+    static void DisplayPostsByUser() {
+    Console.Write("Enter the user name: ");
+    string user = Console.ReadLine();
+    bool found = false;
+    foreach (SocialContent content in contentList) {
+        if (content.User == user) {
+            Console.WriteLine("- - - - - - - - - - - - - - - - -");
+            content.DisplayContent();
+            found = true;
+        }
+    }
+    if (!found) {
+        Console.WriteLine($"There could not be find anything from : {user}");
+    }
+}}
